@@ -1,0 +1,35 @@
+.section-title-info {
+	margin: 0 auto;
+	padding: 70px 15px;
+	display: flex;
+	justify-content: center;
+	max-width: 837px;
+	text-align: center;
+	& span {
+		display: block;
+		font-size: 18px;
+		font-weight: 400;
+		line-height: 160%;
+	}
+	&--md {
+		max-width: 930px;
+		padding: 70px 0 35px;
+	}
+}
+
+
+@media screen and ( max-width: 1200px ) {
+	.section-title-info {
+		padding: 50px 15px;
+		max-width: 722px;
+		& span {
+			font-size: 16px;
+		}
+	}
+}
+
+@media screen and ( max-width: 376px ) {
+	.section-title-info {
+		padding: 30px 15px 50px;
+	}
+}

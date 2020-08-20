@@ -1,0 +1,182 @@
+.result {
+	padding: 35px 0;
+	&__wrap {
+		display: flex;
+		justify-content: center;
+	}
+	&__title {
+		margin: 0 0 50px;
+		&-text {
+			color: $blue;
+			font-size: 40px;
+			font-weight: 300;
+			text-transform: uppercase;
+		}
+	}
+	&__body {
+		margin: 0 -15px;
+		display: flex;
+		justify-content: center;
+	}
+	&__card {
+		margin: 0 15px;
+		display: flex;
+	}
+}
+
+.md-card {
+	display: flex;
+	padding: 50px 15px 52px;
+	max-width: 690px;
+	width: 100%;
+	border: 1px solid #9AB8CB;
+	&__container {
+		display: flex;
+		max-width: 570px;
+		width: 100%;
+		margin: 0 auto;
+	}
+	&__body {
+		display: flex;
+		flex-direction: column;
+	}
+	&__title {
+		margin: 0 0 32px;
+		text-align: center;
+		&-text {
+			color: $blue;
+			font-size: 40px;
+			font-weight: 300;
+			text-transform: uppercase;
+		}
+	}
+	&__image {
+		margin: 0 0 30px;
+		max-width: 570px;
+		max-height: 570px;
+		& img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+	&__info {
+		margin: 0 0 63px;
+		&-item {
+			margin: 0 0 15px;
+			display: block;
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 160%;
+			&:last-of-type {
+				margin: 0;
+			}
+		}
+	}
+	&__btn-group {
+		margin: auto 0 0;
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		& a {
+			display: block;
+			min-width: 250px;
+		}
+	}
+}
+
+@media screen and ( max-width: 1200px ) {
+	.result {
+		&__title {
+			margin: 0 0 30px;
+			&-text {
+				font-size: 36px;
+			}
+		}
+	}
+	.md-card {
+		padding: 50px 15px 38px;
+		&__title {
+			margin: 0 0 31px;
+			&-text {
+				font-size: 36px;
+			}
+		}
+		&__info {
+			margin: 0 0 49px;
+			&-item {
+				margin: 0 0 16px;
+				font-size: 16px;
+			}
+		}
+	}
+}
+
+@media screen and ( max-width: 768px ) {
+	.result {
+		&__body {
+			padding: 0 15px 0;
+			flex-direction: column;
+			align-items: center;
+		}
+		&__title {
+			text-align: center;
+			margin: 0 0 55px;
+		}
+		&__card {
+			margin: 0 15px 50px;
+			&:last-of-type {
+				margin: 0 15px 0;
+			}
+		}
+	}
+}
+
+@media screen and ( max-width: 576px ) {
+	.result {
+		&__title {
+			&-text {
+				font-size: 34px;
+				line-height: 160%;
+			}
+		}
+	}
+	.md-card {
+		&__title {
+			&-text {
+				font-size: 34px;
+
+			}
+		}
+	}
+}
+
+@media screen and ( max-width: 376px ) {
+	.result {
+		&__title {
+			margin: 0 0 15px;
+			&-text {
+				font-size: 22px;
+			}
+		}
+		&__card {
+			margin: 0 15px 15px;
+		}
+	}
+	.md-card {
+		padding: 15px 15px 30px;
+		&__title {
+			margin: 0 0 15px;
+			&-text {
+				font-size: 22px;
+				line-height: 160%;
+			}
+		}
+		&__info {
+			margin: 0 0 30px;
+			&-item {
+				margin: 0 0 15px;
+			}
+		}
+	}
+}

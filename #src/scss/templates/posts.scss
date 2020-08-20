@@ -1,0 +1,95 @@
+.posts {
+	padding: 70px 0 35px;
+	&__body {
+		margin: 0 -15px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	&__item {
+		padding: 0 15px 35px;
+	}
+}
+
+.post-card {
+	max-width: 470px;
+	width: 33.33%;
+	&__image {
+		margin: 0 0 20px;
+		& img {
+			display: block;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+	&__title {
+		margin: 0 0 20px;
+		&-text {
+			display: block;
+			color: $blue;
+			font-size: 18px;
+			font-weight: 600;
+			text-transform: uppercase;
+		}
+	}
+	&__description {
+		&-text {
+			display: block;
+			font-size: 18px;
+			font-weight: 400;
+			line-height: 160%;
+		}
+	}
+}
+
+@media screen and ( max-width: 1200px ) {
+	.posts {
+		padding: 50px 0 0;
+	}
+	.post-card {
+		&__image {
+			margin: 0 0 34px;
+		}
+		&__title {
+			margin: 0 0 27px;
+		}
+	}
+}
+
+@media screen and ( max-width: 991px ) {
+	.post-card {
+		width: 50%;
+	}
+}
+
+@media screen and ( max-width: 991px ) {
+	.post-card {
+		&__description {
+			&-text {
+				font-size: 16px;
+			}
+		}
+	}
+}
+
+@media screen and ( max-width: 768px ) {
+	.post-card {
+		width: 100%;
+	}
+}
+
+@media screen and ( max-width: 376px ) {
+	.posts {
+		&__item {
+			padding: 0 15px 50px;
+		}
+	}
+	.post-card {
+		&__image {
+			margin: 0 -15px 15px;
+		}
+		&__title {
+			margin: 0 0 15px;
+		}
+	}
+}

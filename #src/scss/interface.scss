@@ -1,0 +1,24 @@
+.main-btn {
+	display: inline-block;
+	padding: 9px 30px;
+	color: #fff;
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+	line-height: 160%;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 100px;
+	background: linear-gradient(272.94deg, #36D1DC 0%, #4CA5E3 100%);
+	cursor: pointer;
+	outline: none;
+}
+
+@media screen and ( min-width: 991px ) {
+	.main-btn {
+		transition: all 0.1s ease-out;
+		&:hover {
+			box-shadow: 0 0 25px #e1eaf0;
+			background: linear-gradient(272.94deg, #36D1DC 30%, #4CA5E3 100%);
+		}
+	}
+}

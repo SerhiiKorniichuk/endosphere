@@ -1,0 +1,29 @@
+.slick-dots {
+	display: flex;
+	justify-content: center;
+}
+.slick-dots button {
+	display: block;
+	margin: 0 12px;
+	width: 15px;
+	height: 15px;
+	border: 1px solid $blue;
+	background-color: transparent;
+	border-radius: 15px;
+	font-size: 0;
+	outline: none;
+	cursor: pointer;
+}
+.slick-dots .slick-active>button {
+	background: linear-gradient(272.94deg, #36D1DC 0%, #4CA5E3 100%);
+} 
+
+@media screen and ( max-width: 576px ) {
+	.slick-dots button {
+		padding: 4px;
+		margin: 0 7px;
+		max-width: 10px;
+		max-height: 10px;
+		border-radius: 10px;
+	}
+}

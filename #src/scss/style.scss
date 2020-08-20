@@ -1,0 +1,37 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+	@font-face {
+		font-family: $font_name;
+		font-display: swap;
+		src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+		font-weight: #{$weight};
+		font-style: #{$style};
+	}
+}
+
+@import 'fonts';
+@import 'variables';
+@import 'grid';
+@import 'main';
+@import 'interface';
+@import 'templates/pattern';
+
+@import 'templates/header';
+@import 'templates/md-main-section';
+@import 'templates/sm-main-section';
+@import 'templates/section-title-info';
+@import 'templates/advantages';
+@import 'templates/info-banner';
+@import 'templates/services';
+@import 'templates/actions';
+@import 'templates/addit-info';
+@import 'templates/result';
+@import 'templates/contraindication';
+@import 'templates/comparison';
+@import 'templates/info-block';
+@import 'templates/phases';
+@import 'templates/slider-pattern';
+@import 'templates/posts';
+
+@import 'templates/footer';
+
+@import 'templates/popup-regist';

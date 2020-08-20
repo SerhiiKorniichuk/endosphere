@@ -1,0 +1,169 @@
+.advantages {
+	padding: 0 0 35px;
+	&__body {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: -15px -15px 0;
+	}
+	&__slider {
+		display: flex;
+		justify-content: center;
+	}
+	&__add-info {
+		max-width: 1197px;
+		width: 100%;
+		margin: 35px auto 0;
+		padding: 0 15px;
+		text-align: right;
+		&-text {
+			display: block;
+			font-size: 10px;
+			font-weight: 300;
+			text-transform: uppercase;
+		}
+	}
+}
+
+.sm-card {
+	display: flex;
+	max-width: 369px;
+	width: 100%;
+	margin: 0 15px;
+	outline: none;
+	&__body {
+		max-width: 369px;
+		width: 100%;
+		margin: 15px auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 39px 5px 15px;
+		background: #FFFFFF;
+		box-shadow: 0px 4px 25px #E1EAF0;
+	}
+	&__icon {
+		margin: 0 auto 28px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 110px;
+		height: 110px;
+		border-radius: 100px;
+		background-color: #E1EAF0;
+		& img {
+			display: block;
+		}
+	}
+	&__title {
+		position: relative;
+		padding: 0 0 17px;
+		margin: 0 0 15px;
+		text-align: center;
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 110px;
+			height: 2px;
+			border-radius: 1px;
+			background-color: #E1EAF0;
+		}
+		&-text {
+			display: block;
+			font-size: 18px;
+			font-weight: 600;
+			text-transform: uppercase;
+			color: $blue;
+		}
+	}
+	&__description {
+		margin: 0 0 10px;
+		display: flex;
+		justify-content: center;
+		max-width: 300px;
+		text-align: center;
+		&-text {
+			display: block;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 160%;
+		}
+	}
+	&__count {
+		margin: auto 0 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		&-info {
+			margin: 0 0 3px;
+			display: block;
+			color: $blue;
+			font-size: 24px;
+			font-weight: 600;
+		}
+		&-description {
+			display: block;
+			font-size: 10px;
+			font-weight: 400;
+		}
+	}
+}
+
+@media screen and ( max-width: 1200px ) {
+	.sm-card {
+		&__title {
+			&-text {
+				font-size: 16px;
+			}
+		}
+	}
+}
+
+@media screen and ( max-width: 991px ) {
+	.advantages {
+		&__body {
+			margin: -30px -15px 0;
+		}
+		&__slider {
+			display: flex;
+			flex-direction: column;
+		}
+		& .slick-track {
+			display: flex;
+		}
+		&__add-info {
+			order: -1;
+			text-align: center;
+		}
+	}
+	.sm-card {
+		padding: 15px 0;
+		display: block;
+		max-width: 100%;
+		width: auto;
+		margin: 0;
+		&__body {
+			min-height: 402px;
+		}
+	}
+}
+
+@media screen and ( max-width: 576px ) {
+	.advantages {
+		padding: 0 0 50px;
+	}
+	.sm-card {
+		&__body {
+			padding: 30px 5px;
+			max-width: 290px;
+		}
+		&__description {
+			&-text {
+				font-size: 12px;
+			}
+		}
+	}
+}
